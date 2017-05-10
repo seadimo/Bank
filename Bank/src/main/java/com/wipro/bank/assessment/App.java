@@ -31,6 +31,26 @@ public static final List<Account> accounts=new ArrayList<Account>();
 		return result;
 	
 	}
+	public List<Account> getAccountDetailsByBalance(double amount)
+	{
+		List<Account> result=new ArrayList<Account> ();
+		for(int i=0;i<accounts.size();i++)
+		{
+			if(accounts.get(i).getBalance()>=amount) result.add(accounts.get(i));
+		}
+		if(result.size()==0)
+		{
+			//System.out.println("two :"+ result);
+			return null;
+		}
+		
+		else
+			{
+			System.out.println("three :"+ result);
+		return result;
+		
+	}
 
+	}
+	}
 
-}
